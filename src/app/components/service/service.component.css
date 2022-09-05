@@ -1,0 +1,126 @@
+.service {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+.serviceCap {
+  max-width: 1320px;
+  margin: auto;
+}
+.serviceCap h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+
+  padding-bottom: 20px;
+}
+.serviceCap h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #008374;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0.5em auto 0;
+  font-family: "Roboto", sans-serif;
+}
+.serviceCap p {
+  margin-bottom: 2em;
+  color: #6f6f6f;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.grid1 {
+  background-color: #fff;
+  width: 400px;
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+}
+.iconn {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.iconn ::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background: #eeeeee;
+  border-radius: 100%;
+  z-index: -1;
+  top: -20px;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.icon {
+  color: #222;
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 33;
+  position: relative;
+}
+
+.grid1 h3 {
+  color: #222;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #eeeeee;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+.grid1 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.grid1 a {
+  margin-top: 15px;
+  display: inline-block;
+  color: #00838b;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.grid1:hover > .iconn ::before {
+  background: #00b6a1;
+}
+.grid1:hover > h3 {
+  border-color: #00838b;
+}
+
+@media (max-width: 1070px) {
+  .grid1 {
+    width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .grid1 {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .grid1 {
+    width: 98%;
+    padding: 40px 1em;
+  }
+}

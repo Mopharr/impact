@@ -1,0 +1,101 @@
+.testimonials {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+.testimonialsCap {
+  max-width: 1320px;
+  margin: auto;
+}
+.testimonialsCap h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+
+  padding-bottom: 20px;
+}
+.testimonialsCap h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #008374;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0.5em auto 0;
+  font-family: "Roboto", sans-serif;
+}
+.testimonialsCap p {
+  margin-bottom: 2em;
+  color: #6f6f6f;
+  text-align: center;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap   ;
+  gap: 1em;
+}
+.tes {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 10px;
+  box-shadow: 0px 0 15px rgb(0 0 0 / 10%);
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+    width: 300px;
+
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+.top img {
+  width: 90px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.top p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+.top span {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+.iconB {
+  margin: 10px 0 0;
+}
+.icon {
+  color: #ffc107;
+  margin: 0px 1px;
+}
+.down p {
+  font-style: italic;
+  font-size: 16px;
+  margin: 15px auto 15px auto;
+  font-family: "Roboto", sans-serif;
+}
+.downIcon {
+  color: #009d8b;
+  font-size: 26px;
+  line-height: 0;
+  margin-left: 0.5em;
+}
+@media (max-width: 768px) {
+    .tes{
+        width: 98%;
+    }
+}

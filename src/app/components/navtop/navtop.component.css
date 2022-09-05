@@ -1,0 +1,58 @@
+.navtop {
+  width: 100%;
+  background: #00796b;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0 1em;
+}
+.navtopCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: auto;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+.leftCon {
+  display: flex;
+  align-items: center;
+}
+.leftCon2 {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+.leftCon2 span {
+  margin-left: 0.5em;
+}
+.leftCon a {
+  font-style: normal;
+  line-height: 0;
+  margin-left: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+}
+.icon {
+  margin-right: 1em;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .right{
+      display: none;
+    }
+}

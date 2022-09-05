@@ -1,0 +1,171 @@
+.herob4 {
+  height: 800px;
+  position: relative;
+}
+.hero {
+  width: 100%;
+  padding: 0 1em;
+
+  position: relative;
+  background: #008374;
+  padding: 60px 1em 0;
+  height: 80%;
+}
+.heroCap {
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text {
+  max-width: 600px;
+}
+.text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+
+  margin-bottom: 30px;
+}
+.bbtn {
+  display: flex;
+  align-items: center;
+}
+.btn1 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgb(0 0 0 / 8%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.btn2 {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+.btnIcon {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.heroSec {
+  position: absolute;
+  top: 58%;
+  width: 100%;
+  padding: 1em;
+}
+.heroSecc {
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.circle {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #008d7d;
+  box-shadow: 0 0 29px 0 rgb(0 0 0 / 8%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.circle .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.circle h1 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+hr {
+  color: #008374;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .herob4 {
+    height: 100%;
+  }
+  hr{
+    display: none
+  }
+  .hero {
+    height: 100%;
+  }
+  .heroCap {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .heroSec {
+    position: unset;
+    background-color: #008374;
+  }
+  .imgg {
+    height: 500px;
+  }
+  .heroCap img {
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+  .bbtn{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgg {
+    height: 100%;
+    margin: 1em 0;
+  }
+  .text{
+    margin-bottom: 3em;
+  }
+  .circle{
+    width: 97%;
+  }
+}
